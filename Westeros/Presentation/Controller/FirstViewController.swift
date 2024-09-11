@@ -11,7 +11,12 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemIndigo
     }
+    
+    @IBAction func aPorTodasButton(_ sender: Any) {
+        let viewController = SecondViewController()
+        self.present(viewController, animated: true)
+    }
+    
 
 }
