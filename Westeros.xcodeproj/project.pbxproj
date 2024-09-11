@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		662C0BB72C91E2C8006E39C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */; };
 		662C0BB92C91E2C8006E39C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BB82C91E2C8006E39C4 /* SceneDelegate.swift */; };
-		662C0BBB2C91E2C8006E39C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BBA2C91E2C8006E39C4 /* ViewController.swift */; };
-		662C0BBE2C91E2C8006E39C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BBD2C91E2C8006E39C4 /* Base */; };
 		662C0BC02C91E2CA006E39C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BBF2C91E2CA006E39C4 /* Assets.xcassets */; };
 		662C0BC32C91E2CA006E39C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BC22C91E2CA006E39C4 /* Base */; };
+		662C0BCC2C91E7F5006E39C4 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BCB2C91E7F5006E39C4 /* House.swift */; };
+		662C0BCE2C91E8A2006E39C4 /* GOTCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BCD2C91E8A2006E39C4 /* GOTCharacter.swift */; };
+		662C0BD62C91EC73006E39C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BD42C91EC73006E39C4 /* FirstViewController.swift */; };
+		662C0BD72C91EC73006E39C4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BD52C91EC73006E39C4 /* FirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		662C0BB32C91E2C8006E39C4 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		662C0BB82C91E2C8006E39C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		662C0BBA2C91E2C8006E39C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		662C0BBD2C91E2C8006E39C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		662C0BBF2C91E2CA006E39C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662C0BC22C91E2CA006E39C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		662C0BC42C91E2CA006E39C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		662C0BCB2C91E7F5006E39C4 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		662C0BCD2C91E8A2006E39C4 /* GOTCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTCharacter.swift; sourceTree = "<group>"; };
+		662C0BD42C91EC73006E39C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		662C0BD52C91EC73006E39C4 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		662C0BB52C91E2C8006E39C4 /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				662C0BCF2C91E8D6006E39C4 /* Presentation */,
+				662C0BCA2C91E7D6006E39C4 /* Models */,
 				662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */,
 				662C0BB82C91E2C8006E39C4 /* SceneDelegate.swift */,
-				662C0BBA2C91E2C8006E39C4 /* ViewController.swift */,
-				662C0BBC2C91E2C8006E39C4 /* Main.storyboard */,
 				662C0BBF2C91E2CA006E39C4 /* Assets.xcassets */,
 				662C0BC12C91E2CA006E39C4 /* LaunchScreen.storyboard */,
 				662C0BC42C91E2CA006E39C4 /* Info.plist */,
 			);
 			path = Westeros;
+			sourceTree = "<group>";
+		};
+		662C0BCA2C91E7D6006E39C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				662C0BCB2C91E7F5006E39C4 /* House.swift */,
+				662C0BCD2C91E8A2006E39C4 /* GOTCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		662C0BCF2C91E8D6006E39C4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				662C0BD02C91E8F9006E39C4 /* View */,
+				662C0BD12C91E905006E39C4 /* Controller */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		662C0BD02C91E8F9006E39C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				662C0BD52C91EC73006E39C4 /* FirstViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		662C0BD12C91E905006E39C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				662C0BD42C91EC73006E39C4 /* FirstViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,7 @@
 			files = (
 				662C0BC02C91E2CA006E39C4 /* Assets.xcassets in Resources */,
 				662C0BC32C91E2CA006E39C4 /* Base in Resources */,
-				662C0BBE2C91E2C8006E39C4 /* Base in Resources */,
+				662C0BD72C91EC73006E39C4 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				662C0BBB2C91E2C8006E39C4 /* ViewController.swift in Sources */,
 				662C0BB72C91E2C8006E39C4 /* AppDelegate.swift in Sources */,
+				662C0BCC2C91E7F5006E39C4 /* House.swift in Sources */,
+				662C0BD62C91EC73006E39C4 /* FirstViewController.swift in Sources */,
 				662C0BB92C91E2C8006E39C4 /* SceneDelegate.swift in Sources */,
+				662C0BCE2C91E8A2006E39C4 /* GOTCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		662C0BBC2C91E2C8006E39C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				662C0BBD2C91E2C8006E39C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		662C0BC12C91E2CA006E39C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +329,6 @@
 				INFOPLIST_FILE = Westeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +356,6 @@
 				INFOPLIST_FILE = Westeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
