@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6628A5132C935AA400032768 /* HouseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6628A5122C935AA400032768 /* HouseTableViewController.xib */; };
+		6628A5142C935AA400032768 /* HouseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6628A5112C935AA400032768 /* HouseTableViewController.swift */; };
+		6628A5172C935DA500032768 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6628A5162C935DA500032768 /* HouseTableViewCell.xib */; };
+		6628A5182C935DA500032768 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6628A5152C935DA500032768 /* HouseTableViewCell.swift */; };
 		662C0BB72C91E2C8006E39C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */; };
 		662C0BB92C91E2C8006E39C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BB82C91E2C8006E39C4 /* SceneDelegate.swift */; };
 		662C0BC02C91E2CA006E39C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BBF2C91E2CA006E39C4 /* Assets.xcassets */; };
@@ -17,9 +21,14 @@
 		662C0BD72C91EC73006E39C4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BD52C91EC73006E39C4 /* FirstViewController.xib */; };
 		662C0BDA2C9203FE006E39C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C0BD82C9203FE006E39C4 /* SecondViewController.swift */; };
 		662C0BDB2C9203FE006E39C4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662C0BD92C9203FE006E39C4 /* SecondViewController.xib */; };
+		669731122C9363D10048E283 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731112C9363D10048E283 /* UIImageView+Remote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6628A5112C935AA400032768 /* HouseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewController.swift; sourceTree = "<group>"; };
+		6628A5122C935AA400032768 /* HouseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewController.xib; sourceTree = "<group>"; };
+		6628A5152C935DA500032768 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
+		6628A5162C935DA500032768 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
 		662C0BB32C91E2C8006E39C4 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		662C0BB82C91E2C8006E39C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +41,7 @@
 		662C0BD52C91EC73006E39C4 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		662C0BD82C9203FE006E39C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		662C0BD92C9203FE006E39C4 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		669731112C9363D10048E283 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 		662C0BB52C91E2C8006E39C4 /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				669731102C93637E0048E283 /* Extensions */,
 				662C0BCF2C91E8D6006E39C4 /* Presentation */,
 				662C0BCA2C91E7D6006E39C4 /* Models */,
 				662C0BB62C91E2C8006E39C4 /* AppDelegate.swift */,
@@ -98,6 +109,9 @@
 			children = (
 				662C0BD52C91EC73006E39C4 /* FirstViewController.xib */,
 				662C0BD92C9203FE006E39C4 /* SecondViewController.xib */,
+				6628A5122C935AA400032768 /* HouseTableViewController.xib */,
+				6628A5162C935DA500032768 /* HouseTableViewCell.xib */,
+				6628A5152C935DA500032768 /* HouseTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,8 +121,17 @@
 			children = (
 				662C0BD42C91EC73006E39C4 /* FirstViewController.swift */,
 				662C0BD82C9203FE006E39C4 /* SecondViewController.swift */,
+				6628A5112C935AA400032768 /* HouseTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		669731102C93637E0048E283 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				669731112C9363D10048E283 /* UIImageView+Remote.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6628A5172C935DA500032768 /* HouseTableViewCell.xib in Resources */,
+				6628A5132C935AA400032768 /* HouseTableViewController.xib in Resources */,
 				662C0BDB2C9203FE006E39C4 /* SecondViewController.xib in Resources */,
 				662C0BC02C91E2CA006E39C4 /* Assets.xcassets in Resources */,
 				662C0BC32C91E2CA006E39C4 /* Base in Resources */,
@@ -183,9 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669731122C9363D10048E283 /* UIImageView+Remote.swift in Sources */,
 				662C0BDA2C9203FE006E39C4 /* SecondViewController.swift in Sources */,
 				662C0BB72C91E2C8006E39C4 /* AppDelegate.swift in Sources */,
+				6628A5182C935DA500032768 /* HouseTableViewCell.swift in Sources */,
 				662C0BCC2C91E7F5006E39C4 /* House.swift in Sources */,
+				6628A5142C935AA400032768 /* HouseTableViewController.swift in Sources */,
 				662C0BD62C91EC73006E39C4 /* FirstViewController.swift in Sources */,
 				662C0BB92C91E2C8006E39C4 /* SceneDelegate.swift in Sources */,
 				662C0BCE2C91E8A2006E39C4 /* GOTCharacter.swift in Sources */,
